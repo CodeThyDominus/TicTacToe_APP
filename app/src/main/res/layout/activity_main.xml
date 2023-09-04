@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_name"
+        android:textSize="50sp"
+        android:textColor="#030000"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnlayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:background="#F5DBDB"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            android:background="#F5DBDB"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            android:background="#F5DBDB"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            android:background="#F5DBDB"
+            android:layout_marginLeft="15dp"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            android:background="#F5DBDB"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            android:background="#F5DBDB"
+            android:layout_marginBottom="15dp"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            android:background="#F5DBDB"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            android:background="#F5DBDB"
+            android:layout_marginRight="15dp"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            android:background="#F5DBDB"
+            android:layout_marginRight="15dp"
+            android:onClick="check">
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:text="@string/view_winner"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/winner">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="155dp"
+        android:text="@string/new_game"
+        android:textStyle="bold"
+        android:id="@+id/nGame">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
