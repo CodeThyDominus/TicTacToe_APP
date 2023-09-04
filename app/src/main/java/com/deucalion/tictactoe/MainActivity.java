@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+
                 newGame();
             }
         }, 2000);

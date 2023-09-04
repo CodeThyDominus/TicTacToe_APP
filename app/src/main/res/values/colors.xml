@@ -2,7 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="mainActivity_Bg">#CFE6F1</color>
+    <color name="splashActivity_Bg">#238B98</color>
     <color name="btn_x">#FFF</color>
     <color name="btn_o">#F6DE09</color>
-    <color name="defaultButtonColor">#F5DBDB</color>
+    <color name="defaultButtonColor">#C7B4B4</color>
 </resources>
