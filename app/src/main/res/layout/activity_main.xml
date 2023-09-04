@@ -29,7 +29,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn1"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp"
@@ -38,39 +38,39 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn2"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn3"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn4"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:layout_marginLeft="15dp"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn5"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn6"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:layout_marginBottom="15dp"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn7"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:layout_marginBottom="15dp"
             android:layout_marginLeft="15dp"
             android:onClick="check">
@@ -78,14 +78,14 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn8"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:layout_marginRight="15dp"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn9"
-            android:background="#F5DBDB"
+            android:background="@color/defaultButtonColor"
             android:layout_marginRight="15dp"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>

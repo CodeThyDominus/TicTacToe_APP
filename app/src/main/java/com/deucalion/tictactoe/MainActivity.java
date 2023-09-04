@@ -67,6 +67,16 @@ public class MainActivity extends AppCompatActivity {
         btn8.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
         btn9.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
 
+        btn1.setEnabled(true);
+        btn2.setEnabled(true);
+        btn3.setEnabled(true);
+        btn4.setEnabled(true);
+        btn5.setEnabled(true);
+        btn6.setEnabled(true);
+        btn7.setEnabled(true);
+        btn8.setEnabled(true);
+        btn9.setEnabled(true);
+
 
         flag=0;
         count=0;
@@ -157,7 +167,6 @@ public class MainActivity extends AppCompatActivity {
                     delay();
                 } else if (count==9){
                     Toast.makeText(this, "Draw, No Winner", Toast.LENGTH_LONG).show();
-                    disableButton();
                     delay();
                 }
 
