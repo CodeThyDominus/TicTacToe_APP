@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     int flag=0;
     int count=0;
-    TextView winner;
 
     AppCompatButton btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     AppCompatButton nGame;
@@ -62,6 +62,27 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void delay(){
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                newGame();
+            }
+        }, 2000);
+    }
+
+    private void disableButton() {
+        btn1.setEnabled(false);
+        btn2.setEnabled(false);
+        btn3.setEnabled(false);
+        btn4.setEnabled(false);
+        btn5.setEnabled(false);
+        btn6.setEnabled(false);
+        btn7.setEnabled(false);
+        btn8.setEnabled(false);
+        btn9.setEnabled(false);
+    }
 
     public void check(View view){
 
@@ -91,31 +112,40 @@ public class MainActivity extends AppCompatActivity {
 
                 if (b1.equals(b2) && b2.equals(b3) && !b1.equals("")) {
                     Toast.makeText(this, "Winner is : " + b1, Toast.LENGTH_SHORT).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (b4.equals(b5) && b5.equals(b6) && !b6.equals("")) {
                     Toast.makeText(this, "Winner is : " + b5, Toast.LENGTH_SHORT).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (b7.equals(b8) && b8.equals(b9) && !b9.equals("")) {
                     Toast.makeText(this, "Winner is : " + b7, Toast.LENGTH_LONG).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (b1.equals(b4) && b4.equals(b7) && !b1.equals("")) {
                     Toast.makeText(this, "Winner is : " + b1, Toast.LENGTH_LONG).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (b2.equals(b5) && b5.equals(b8) && !b2.equals("")) {
                     Toast.makeText(this, "Winner is : " + b2, Toast.LENGTH_LONG).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (b3.equals(b6) && b6.equals(b9) && !b3.equals("")) {
                     Toast.makeText(this, "Winner is : " + b3, Toast.LENGTH_LONG).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (b1.equals(b5) && b5.equals(b9) && !b1.equals("")) {
                     Toast.makeText(this, "Winner is : " + b1, Toast.LENGTH_LONG).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (b3.equals(b5) && b5.equals(b7) && !b3.equals("")) {
                     Toast.makeText(this, "Winner is : " + b3, Toast.LENGTH_LONG).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 } else if (count==9){
                     Toast.makeText(this, "Draw, No Winner", Toast.LENGTH_LONG).show();
-                    newGame();
+                    disableButton();
+                    delay();
                 }
 
             }

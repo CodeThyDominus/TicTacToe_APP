@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TicTacToe</string>
     <string name="view_name">Tic Tac Toe</string>
-    <string name="view_winner">Winner : </string>
     <string name="new_game">New Game</string>
+
+
 </resources>

@@ -93,26 +93,13 @@
 
     </GridLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="20"
-        android:text="@string/view_winner"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="150dp"
-        android:layout_marginLeft="100dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:id="@+id/winner">
-
-    </TextView>
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="75dp"
-        android:layout_marginLeft="155dp"
+        android:layout_marginBottom="175dp"
+        android:layout_marginLeft="135dp"
         android:text="@string/new_game"
         android:textStyle="bold"
         android:id="@+id/nGame">
