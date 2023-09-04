@@ -2,6 +2,7 @@ package com.deucalion.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -93,9 +94,11 @@ public class MainActivity extends AppCompatActivity {
 
             if (flag == 0) {
                 btnCurrent.setText("X");
+                btnCurrent.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.btn_x));
                 flag = 1;
             } else {
                 btnCurrent.setText("O");
+                btnCurrent.setBackgroundColor(ContextCompat.getColor(MainActivity.this,R.color.btn_o));
                 flag = 0;
             }
 
