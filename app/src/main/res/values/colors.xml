@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="btn_x">#FFF</color>
     <color name="btn_o">#F6DE09</color>
+    <color name="defaultButtonColor">#F5DBDB</color>
 </resources>

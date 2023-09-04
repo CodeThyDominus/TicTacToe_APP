@@ -57,6 +57,16 @@ public class MainActivity extends AppCompatActivity {
         btn8.setText("");
         btn9.setText("");
 
+        btn1.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn2.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn3.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn4.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn5.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn6.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn7.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn8.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+        btn9.setBackgroundColor(getResources().getColor(R.color.defaultButtonColor));
+
 
         flag=0;
         count=0;
