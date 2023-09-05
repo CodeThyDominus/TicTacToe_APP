@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,8 +16,11 @@
         android:textSize="50sp"
         android:textColor="#030000"
         android:textStyle="bold|italic"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp">
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp">
 
     </TextView>
 
@@ -26,7 +30,13 @@
         android:columnCount="3"
         android:rowCount="3"
         android:layout_centerInParent="true"
-        android:id="@+id/btnlayout">
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        android:id="@+id/btnlayout"
+        tools:ignore="MissingConstraints">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn1"
@@ -52,6 +62,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn4"
             android:background="@color/defaultButtonColor"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
@@ -71,15 +82,16 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn7"
-            android:background="@color/defaultButtonColor"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp"
+            android:background="@color/defaultButtonColor"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn8"
             android:background="@color/defaultButtonColor"
+            android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
@@ -87,6 +99,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn9"
             android:background="@color/defaultButtonColor"
+            android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
             android:onClick="check">
         </androidx.appcompat.widget.AppCompatButton>
@@ -98,13 +111,15 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="175dp"
-        android:layout_marginLeft="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="150dp"
         android:text="@string/new_game"
         android:textStyle="bold"
         android:id="@+id/nGame">
 
     </androidx.appcompat.widget.AppCompatButton>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

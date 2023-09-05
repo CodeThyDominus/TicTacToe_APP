@@ -2,6 +2,8 @@
     <string name="app_name">TicTacToe</string>
     <string name="view_name">Tic Tac Toe</string>
     <string name="new_game">New Game</string>
+    <string name="play">Play</string>
+    <string name="imageSplash_Description">Tic Tac Toe 3D</string>
 
 
 </resources>
