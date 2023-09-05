@@ -9,6 +9,16 @@
     android:layout_height="match_parent"
     android:background="@color/splashActivity_Bg"
     tools:context=".SplashActivity">
+    
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/animationtictactoe"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:id="@+id/animation_lottie">
+
+    </com.airbnb.lottie.LottieAnimationView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,15 +36,7 @@
 
     </TextView>
 
-    <ImageView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/imageSplash_Description"
-        android:src="@drawable/tictctoethreed"
-        tools:ignore="MissingConstraints">
 
-    </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
