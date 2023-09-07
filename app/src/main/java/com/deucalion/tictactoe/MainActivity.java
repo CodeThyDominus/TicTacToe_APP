@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.animation.AnimationUtils;
-
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         findId();
 
     }
-
-
 
     public void findId(){
         btn1 = findViewById(R.id.btn1);
@@ -114,11 +111,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     public void check(View view){
 
         AppCompatButton btnCurrent = (AppCompatButton) view;
-
 
         if(btnCurrent.getText().toString().equals("")) {
             count++;
