@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void applyLineAnimation(AppCompatButton... buttons) {
         Animation lineAnimation = AnimationUtils.loadAnimation(this, R.anim.line_animation);
-        for (AppCompatButton button_ : buttons) {
+        for (AppCompatButton button : buttons) {
             button.startAnimation(lineAnimation);
         }
     }
