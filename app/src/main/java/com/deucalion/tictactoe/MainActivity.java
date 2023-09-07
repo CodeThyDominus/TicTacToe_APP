@@ -112,13 +112,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void applyLineAnimation(AppCompatButton... buttons) {
-        Animation lineAnimation = AnimationUtils.loadAnimation(this, R.anim.line_animation);
-        for (AppCompatButton button : buttons) {
-            button.startAnimation(lineAnimation);
-        }
-    }
-
     public void check(View view){
 
         AppCompatButton btnCurrent = (AppCompatButton) view;
@@ -149,49 +142,41 @@ public class MainActivity extends AppCompatActivity {
 
                 if (b1.equals(b2) && b2.equals(b3) && !b1.equals("")) {
                     Toast.makeText(this, "Winner is : " + b1, Toast.LENGTH_SHORT).show();
-                    applyLineAnimation(btn1,btn2,btn3);
                     applyStrikeAnimation(btn1,btn2,btn3);
                     disableButton();
                     delay();
                 } else if (b4.equals(b5) && b5.equals(b6) && !b6.equals("")) {
                     Toast.makeText(this, "Winner is : " + b5, Toast.LENGTH_SHORT).show();
-                    applyLineAnimation(btn4,btn5,btn6);
                     applyStrikeAnimation(btn4,btn5,btn6);
                     disableButton();
                     delay();
                 } else if (b7.equals(b8) && b8.equals(b9) && !b9.equals("")) {
                     Toast.makeText(this, "Winner is : " + b7, Toast.LENGTH_LONG).show();
-                    applyLineAnimation(btn7,btn8,btn9);
                     applyStrikeAnimation(btn7,btn8,btn9);
                     disableButton();
                     delay();
                 } else if (b1.equals(b4) && b4.equals(b7) && !b1.equals("")) {
                     Toast.makeText(this, "Winner is : " + b1, Toast.LENGTH_LONG).show();
-                    applyLineAnimation(btn1,btn4,btn7);
                     applyStrikeAnimation(btn1,btn4,btn7);
                     disableButton();
                     delay();
                 } else if (b2.equals(b5) && b5.equals(b8) && !b2.equals("")) {
                     Toast.makeText(this, "Winner is : " + b2, Toast.LENGTH_LONG).show();
-                    applyLineAnimation(btn2,btn5,btn8);
                     applyStrikeAnimation(btn2,btn5,btn8);
                     disableButton();
                     delay();
                 } else if (b3.equals(b6) && b6.equals(b9) && !b3.equals("")) {
                     Toast.makeText(this, "Winner is : " + b3, Toast.LENGTH_LONG).show();
-                    applyLineAnimation(btn3,btn6,btn9);
                     applyStrikeAnimation(btn3,btn6,btn9);
                     disableButton();
                     delay();
                 } else if (b1.equals(b5) && b5.equals(b9) && !b1.equals("")) {
                     Toast.makeText(this, "Winner is : " + b1, Toast.LENGTH_LONG).show();
-                    applyLineAnimation(btn1,btn5,btn9);
                     applyStrikeAnimation(btn1,btn5,btn9);
                     disableButton();
                     delay();
                 } else if (b3.equals(b5) && b5.equals(b7) && !b3.equals("")) {
                     Toast.makeText(this, "Winner is : " + b3, Toast.LENGTH_LONG).show();
-                    applyLineAnimation(btn3,btn5,btn7);
                     applyStrikeAnimation(btn3,btn5,btn7);
                     disableButton();
                     delay();
